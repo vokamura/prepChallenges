@@ -23,6 +23,8 @@ function findLongestWord( word1, word2, word3){
 	}
 }
 
+findLongestWord("stuff", "hi", "woohoo");
+
 /*
 DETERMINE EVEN DIBIBILITY
 task: make a function that, given 2 numbers, determines if the 1st number
