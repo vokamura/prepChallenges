@@ -120,9 +120,15 @@ task: calculate the factorial of a number
 input: 5
 output: 120   (5*4*3*2*1)
 */
-function calculateFactorial( number ){
 
+function calculateFactorial( number ){
+	var output = 0;
+	for (var i = number; i >= 0; i--){
+		output = output + (number * (number-1))
+	}
+	return output;
 }
+calculateFactorial(5);
 
 /*
 FIND LONGEST WORD IN ARRAY
