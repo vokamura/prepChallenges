@@ -83,11 +83,17 @@ output: true
 ----
 input: 'mister',
 output: false
-/*
-function checkOutsideLetters( word ){
-	
-}
+*/
 
+function checkOutsideLetters( word ){
+	var last = word.length-1
+	if(word[0] === word[last]){
+		return true;
+	} else {
+		return false;
+	}
+}
+checkOutsideLetters("mister");
 
 /* WEEK 2 */
 /*
