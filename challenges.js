@@ -102,9 +102,16 @@ task: make a fuction that uses loops to reverse a string
 input: 'greetings earthlings'
 output: 'sgnilhtrae sgniteerg' 
 */
-function reverseString( string ){
 
+function reverseString( string ){
+	var newString = '';
+	for (var i = string.length-1; i >= 0; i--){
+		newString += string[i];
+	}
+	return newString;
 }
+
+reverseString("greetings earthlings");
 
 /*
 CALCULATE FACTORIAL
