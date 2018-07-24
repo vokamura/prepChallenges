@@ -44,9 +44,15 @@ output: true
 input: 5, 2
 output: false
 */
-function determineEvenDivisibility( num1, num2 ){
 
+function determineEvenDivisibility( num1, num2 ){
+	if (num1 % num2 === 0 ){
+		return true;
+	} else {
+		return false;
+	}
 }
+determineEvenDivisibility(10,2);
 
 /*
 CHECK FIRST LETTER CAPITLIZED
