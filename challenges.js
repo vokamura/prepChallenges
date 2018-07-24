@@ -131,8 +131,15 @@ input: ['great','days','hi']
 output: 'great'
 */
 function findLongestWordInArray( wordArray ){
-
+	var bigNumber = 0;
+	for (var i=0; i < wordArray.length; i++){
+		if (wordArray[i].length > bigNumber) {
+			bigNumber = wordArray[i];
+		}
+	}
+	return bigNumber;
 }
+findLongestWordInArray(['great','days','hi']);
 
 /*
 EVERY OTHER LETTER
