@@ -152,8 +152,13 @@ input: 'mistermister'
 output: 'itritr'
 */
 function getEveryOtherLetter( string ){
-
+	var newString = '';
+	for (var i=1; i < string.length; i+=2){
+		newString += string[i];
+	}
+	return newString;
 }
+getEveryOtherLetter("mistermister");
 
 /*
 ALPHABETIZE LETTERS
