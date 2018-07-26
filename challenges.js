@@ -176,9 +176,20 @@ output: 'aahllmmorsw'
 input: 'tuba'
 output: 'abtu'
 */
-function alphabetizeLetters( string ){
 
+function alphabetizeLetters( string ){
+	var alphabet = "abcdefghijklmnopqrstuvwxyz";
+	var newString = "";
+	for (var i=0; i < alphabet.length; i++){
+		for(var k=0; k <string.length; k++){
+			if (alphabet[i] === string[k]) {
+				newString += string[k];
+			}
+		}
+	}
+	return newString;
 }
+alphabetizeLetters("marshmallow");
 
 
 
